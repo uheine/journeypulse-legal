@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JourneyPulse: navigation, logbook and trip computer for iPhone</title>
+<meta name="description" content="Navigation, automatic trip recording, warnings along your route and OBD diagnostics in one iPhone app. No account, no subscription, and your trips stay on your device.">
+<meta name="theme-color" content="#05080d">
+<meta name="apple-itunes-app" content="app-id=6749818889">
+<link rel="canonical" href="https://uheine.github.io/journeypulse-legal/en.html">
+<link rel="alternate" hreflang="de" href="https://uheine.github.io/journeypulse-legal/">
+<link rel="alternate" hreflang="en" href="https://uheine.github.io/journeypulse-legal/en.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="JourneyPulse: Rides along. Remembers it all. Tells no one.">
+<meta property="og:description" content="Navigation, logbook and trip computer in one iPhone app. No account, no subscription.">
+<meta property="og:url" content="https://uheine.github.io/journeypulse-legal/en.html">
+<meta property="og:image" content="https://uheine.github.io/journeypulse-legal/assets/og-en.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MobileApplication","name":"JourneyPulse","operatingSystem":"iOS 26","applicationCategory":"TravelApplication","installUrl":"https://apps.apple.com/app/id6749818889","author":{"@type":"Person","name":"Ulrich Heine"}}
+</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></symbol>
+  <symbol id="i-toggle" viewBox="0 0 24 24"><rect x="1" y="5" width="22" height="14" rx="7"/><circle cx="16" cy="12" r="3"/></symbol>
+</svg>
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#content"><img src="assets/icon-96.png" width="32" height="32" alt="">JourneyPulse</a>
+    <nav aria-label="Main navigation">
+      <a class="opt" href="#features">Features</a>
+      <a class="opt" href="#privacy">Privacy</a>
+      <a class="opt" href="https://github.com/uheine/journeypulse-legal/wiki/Home-en">Guide</a>
+      <a class="lang" href="./" lang="de" hreflang="de" aria-label="Deutsche Version">DE</a>
+    </nav>
+  </div>
+</header>
+
+<main id="content">
+  <div class="route" aria-hidden="true"><i></i></div>
+
+  <!-- A: Attention -->
+  <section class="hero">
+    <svg class="hero-map" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <path class="road big" d="M-20 300C260 340 480 240 720 300S1180 500 1460 420"/>
+      <path class="road big" d="M380 -20C420 220 300 460 420 640S640 860 620 920"/>
+      <path class="road" d="M-20 560C200 520 320 600 560 540S940 300 1100 330 1340 300 1460 240"/>
+      <path class="road" d="M900 -20C860 180 1020 340 980 520S820 800 900 920"/>
+      <path class="road" d="M-20 120C160 150 240 60 420 90S760 170 900 90 1240 40 1460 90"/>
+      <path class="road" d="M180 -20C140 180 230 320 170 480S60 760 120 920"/>
+      <path class="road" d="M1220 -20C1190 200 1290 380 1240 560S1130 780 1190 920"/>
+      <path class="road" d="M-20 760C240 720 400 800 680 740S1140 660 1460 720"/>
+      <path class="halo" pathLength="1" d="M-20 880C200 830 330 690 520 650S830 660 950 470 1130 200 1460 130"/>
+      <path class="line" pathLength="1" d="M-20 880C200 830 330 690 520 650S830 660 950 470 1130 200 1460 130"/>
+    </svg>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="kicker">For iPhone and CarPlay</p>
+        <h1><span>Rides along.</span><span>Remembers it all.</span><span class="pulse-word">Tells no one.</span></h1>
+        <p class="lead">JourneyPulse is navigation, logbook and trip computer in one app. You don't need an account or a subscription, and your trips stay on your iPhone.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="https://apps.apple.com/app/id6749818889">Get it on the App Store</a>
+          <a class="btn ghost" href="#video">Watch the video (30 s)</a>
+        </div>
+        <ul class="facts">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>No account</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>One-time purchase, no subscription</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Offline routing available</li>
+        </ul>
+      </div>
+      <div class="phone hero-phone">
+        <img src="assets/shot-stau.webp" width="640" height="1390" alt="JourneyPulse during navigation, shown in German: a traffic jam warning 550 m ahead, the next exit instruction and an 8-minute delay caused by the jam." fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <!-- I: Interest -->
+  <section class="section" id="features" data-stop="Features">
+    <span class="wp" aria-hidden="true"></span>
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="sign"><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>Features</span>
+        <h2>One app instead of four.</h2>
+        <p>Navigation, traffic warnings, a logbook and vehicle diagnostics usually live in separate apps. Here they work together: the route knows about the jam, the logbook knows the route, and the OBD adapter knows your fuel consumption.</p>
+      </div>
+      <div class="bento">
+        <article class="card c3 reveal">
+          <div class="txt">
+            <h3>Navigation that sees ahead</h3>
+            <p>Voice guidance even in the background, alternative routes, stopovers and destinations by voice. The optional map data set for Germany adds offline routing, speed limits and lane guidance.</p>
+          </div>
+          <div class="peek mid"><div class="frame"><img src="assets/shot-route.webp" width="640" height="1390" loading="lazy" alt="Route overview with the recommended route and an alternative on the map."></div></div>
+        </article>
+        <article class="card c3 reveal">
+          <div class="txt">
+            <h3>Warns you about what's ahead</h3>
+            <p>Roadworks, closures and traffic jams on your route, plus German Weather Service warnings for your expected arrival time. You see the delay in minutes right away.</p>
+          </div>
+          <div class="peek"><div class="frame"><img src="assets/shot-baustelle.webp" width="640" height="1390" loading="lazy" alt="Navigation with a roadworks warning 339 m ahead, a 120 speed limit and lane guidance."></div></div>
+        </article>
+        <article class="card c2 reveal">
+          <div class="txt">
+            <h3>Records on its own</h3>
+            <p>Trips start and end automatically, even with the display locked. The app recognises places where you stay for a while.</p>
+          </div>
+          <div class="peek"><div class="frame"><img src="assets/shot-live.webp" width="640" height="973" loading="lazy" alt="Live view with current speed, a 30 speed limit and a map of nearby places."></div></div>
+        </article>
+        <article class="card c2 reveal">
+          <div class="txt">
+            <h3>Logbook included</h3>
+            <p>Business, private or commute, preset if you like. Export trips as GPX and reports as CSV or PDF.</p>
+          </div>
+          <div class="peek"><div class="frame"><img src="assets/shot-fahrtenbuch.webp" width="640" height="1390" loading="lazy" alt="Logbook with monthly totals for business trips, private trips and the commute."></div></div>
+        </article>
+        <article class="card c2 reveal">
+          <div class="txt">
+            <h3>Know your car <span class="tag">BETA</span></h3>
+            <p>With a Bluetooth OBD adapter you see live values and fuel consumption, and read fault codes in plain language.</p>
+          </div>
+          <div class="peek"><div class="frame"><img src="assets/shot-obd.webp" width="640" height="1390" loading="lazy" alt="OBD live data: fuel consumption, engine speed, coolant temperature, engine load and more."></div></div>
+        </article>
+        <article class="card span-all reveal">
+          <div class="strip">
+            <div><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg><p><b>CarPlay</b><span>Map, lane hints and hazard alerts in your car.</span></p></div>
+            <div><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><p><b>Dynamic Island</b><span>Live Activity during your trip.</span></p></div>
+            <div><svg class="icon" aria-hidden="true"><use href="#i-mic"/></svg><p><b>Siri and Shortcuts</b><span>Start a trip, report a hazard, navigate home.</span></p></div>
+            <div><svg class="icon" aria-hidden="true"><use href="#i-toggle"/></svg><p><b>Control Center</b><span>A quick switch while you're out.</span></p></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- D: Desire -->
+  <div class="desire">
+    <section class="section" id="on-the-road" data-stop="How it feels">
+      <span class="wp" aria-hidden="true"></span>
+      <div class="wrap">
+        <div class="head reveal">
+          <span class="sign"><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>On the road</span>
+          <h2>Less tech.<br>More drive.</h2>
+        </div>
+        <div class="scenes">
+          <article class="scene reveal">
+            <img src="assets/scene-start.webp" width="768" height="1376" loading="lazy" alt="A person gets into a car at dusk in an old town street, with a glowing line showing the way.">
+            <div><h3>Get in. Drive off. Done.</h3><p>No start button to remember. By evening, the trip is in your history with its route and duration.</p></div>
+          </article>
+          <article class="scene reveal">
+            <img src="assets/scene-stau.webp" width="768" height="1376" loading="lazy" alt="View from a car onto a motorway at dusk, with the iPhone in its mount glowing a warning red.">
+            <div><h3>Traffic jam? You'll know first.</h3><p>You see early what's happening on your route and how much time it costs, so you can still react.</p></div>
+          </article>
+          <article class="scene reveal">
+            <img src="assets/scene-strasse.webp" width="768" height="1376" loading="lazy" alt="Aerial view of a winding country road through dark forest, with light trails following the road.">
+            <div><h3>Knows your pace.</h3><p>Arrival times learn from your own trips, right on your iPhone. The ECO analysis shows how smoothly you drove.</p></div>
+          </article>
+        </div>
+
+        <div class="privacy" id="privacy" data-stop="Privacy">
+          <div class="pic reveal"><img src="assets/scene-daten.webp" width="768" height="1376" loading="lazy" alt="An iPhone under a glowing glass dome with a padlock symbol."></div>
+          <div class="reveal">
+            <span class="sign"><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>Privacy</span>
+            <h2>Your routes belong to you.</h2>
+            <ul class="checks">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>No user account, no sign-up</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>No server where your trips end up</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Trips, places, fuel stops and OBD data stay on your iPhone</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Export and iCloud backup only when you start them</li>
+            </ul>
+            <blockquote>“An app that records where you are knows a great deal about you. That knowledge belongs to you and nobody else.”<footer>Ulrich Heine, developer</footer></blockquote>
+            <p class="fine">It can't work entirely without the internet: for maps, routes, warnings and weather, the app queries external services and sends the map area they need. <a href="https://github.com/uheine/journeypulse-legal/wiki/Privacy">See which services</a></p>
+          </div>
+        </div>
+
+        <div class="story" id="video" data-stop="The video">
+          <div class="reveal">
+            <span class="sign"><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>The story</span>
+            <h2>Built by someone who needs it.</h2>
+            <p>JourneyPulse began with a day in an unfamiliar city and the wish to look back that evening at everywhere you'd been. The tracker became a navigation app, and the navigation app became a companion for the car.</p>
+            <p>There's no corporation behind it, just one developer. Your feedback goes straight to him. He fixes bugs as quickly as possible and is happy to take requests.</p>
+            <p><a href="https://github.com/uheine/journeypulse-legal/wiki/The-Story-of-JourneyPulse">Read the full story</a></p>
+            <p class="fine">The video and the screenshots on this page show the German version. The app is also available in English.</p>
+          </div>
+          <div class="player reveal">
+            <video controls playsinline preload="none" poster="assets/promo-poster.webp" width="720" height="1280" aria-label="JourneyPulse in 30 seconds, in German">
+              <source src="assets/promo.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- A: Action -->
+  <section class="section" id="ziel" data-stop="Destination: App Store">
+    <span class="wp" aria-hidden="true"></span>
+    <div class="wrap">
+      <div class="action reveal">
+        <div>
+          <img class="app" src="assets/icon-180.png" width="84" height="84" alt="">
+          <h2>Your next trip could be the first.</h2>
+          <p>Buy it once and you never pay again, and updates stay free. Install, allow location access, drive off.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="https://apps.apple.com/app/id6749818889">Get it on the App Store</a>
+          </div>
+          <p class="req">For iPhone with iOS 26 or later. App in English and German.</p>
+        </div>
+        <div class="qr">
+          <img src="assets/qr-appstore.svg" width="172" height="172" loading="lazy" alt="QR code for the app on the App Store">
+          <span>Scan with your iPhone</span>
+        </div>
+      </div>
+
+      <div class="faq">
+        <h2>Before you set off</h2>
+        <details><summary>Do I need an account?</summary><p>No. There's no sign-up and no user account. Install the app and drive.</p></details>
+        <details><summary>Does navigation work without internet?</summary><p>Yes, with the optional map data set for Germany the app calculates routes on the device. Without map data it uses Apple Maps, which needs a connection.</p></details>
+        <details><summary>How hard is it on the battery?</summary><p>Background recording uses GPS and can increase battery use. Location tracking adapts to your movement, and the “important places only” profile is especially frugal.</p></details>
+        <details><summary>Is the logbook accepted by tax authorities?</summary><p>No. It's a private overview, for example for commuting allowances. It has no edit lock and no mandatory odometer reading.</p></details>
+        <details><summary>Does the app work outside Germany?</summary><p>The focus is on Germany: that's where the offline map data, official traffic data and weather warnings apply. Other limits are listed under <a href="https://github.com/uheine/journeypulse-legal/wiki/Known-Limitations">Known Limitations</a>.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <nav aria-label="More pages">
+      <a href="https://github.com/uheine/journeypulse-legal/wiki/Home-en">Guide</a>
+      <a href="https://github.com/uheine/journeypulse-legal/wiki/FAQ-en">FAQ</a>
+      <a href="mailto:apps@uheine.com">Contact</a>
+      <a href="datenschutz.html" hreflang="de">Privacy policy (German)</a>
+      <a href="impressum.html" hreflang="de">Legal notice (German)</a>
+    </nav>
+    <p>Traffic and hazard information comes from public sources and may be incomplete. Traffic rules and actual road conditions always take priority. Some newer features are marked as beta.</p>
+    <p>Map data © OpenStreetMap contributors (ODbL). Apple, App Store, CarPlay, iPhone and Siri are trademarks of Apple Inc. This page uses no cookies and no tracking.</p>
+  </div>
+</footer>
+
+<aside class="hud" aria-label="Progress on this page" data-in="In" data-arrived="You have arrived" data-arrived-hint="Drive safely!">
+  <a class="next" href="#features">
+    <span class="turn"><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg></span>
+    <span class="where"><b>In 300 m</b><span>Features</span></span>
+  </a>
+  <a class="btn primary" href="https://apps.apple.com/app/id6749818889">App Store</a>
+</aside>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>
