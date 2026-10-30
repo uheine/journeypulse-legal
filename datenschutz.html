@@ -2,32 +2,104 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Datenschutzerklärung – JourneyPulse</title>
   <style>
-    body { max-width: 700px; margin: auto; font-family: sans-serif; line-height: 1.6; padding: 20px; }
+    body { max-width: 760px; margin: auto; font-family: sans-serif; line-height: 1.6; padding: 20px; }
     h1,h2 { color: #003366; }
+    table { border-collapse: collapse; width: 100%; font-size: .94rem; }
+    th, td { border: 1px solid #c8d0d8; padding: 6px 8px; text-align: left; vertical-align: top; }
+    th { background: #eef2f6; }
+    .scroll { overflow-x: auto; }
   </style>
 </head>
 <body>
+
   <h1>Datenschutzerklärung – JourneyPulse</h1>
-  <p><strong>Stand:</strong> Februar 2025</p>
+  <p><strong>Stand:</strong> Oktober 2026</p>
 
   <h2>1. Verantwortlicher</h2>
-  <p>Ulrich Heine<br>Niester Strasse 2, 37213 Witzenhausen<br>E-Mail: uheine@uheine.com</p>
+  <p>Hans Ulrich Heine<br>Niester Straße 2, 37213 Witzenhausen<br>E-Mail: uheine@uheine.com</p>
 
-  <h2>2. Erhobene Daten</h2>
-  <p>Die App verarbeitet Standortdaten, Bewegungsdaten (Distanz, Geschwindigkeit) sowie manuell erfasste POIs. Alle Daten bleiben ausschließlich lokal auf deinem Gerät.</p>
+  <h2>2. Das Wichtigste in Kürze</h2>
+  <ul>
+    <li>JourneyPulse hat kein Nutzerkonto, keine Werbung und keine Analyse-Tools.</li>
+    <li>Deine Fahrten, Orte und Fahrzeugdaten liegen in einer Datenbank auf deinem iPhone. Ich betreibe keinen Server, auf dem sie landen, und habe keinen Zugriff darauf.</li>
+    <li>Für einige Funktionen fragt die App externe Dienste ab. Diese erhalten dabei die für die Anfrage nötigen Daten, zum Beispiel einen Kartenausschnitt, und technisch bedingt deine IP-Adresse (Abschnitt 5).</li>
+  </ul>
 
-  <h2>3. Zweck der Verarbeitung</h2>
-  <p>Die Daten dienen ausschließlich der Routenaufzeichnung, Statistikdarstellung und optionalem Export (GPX/CSV/PDF).</p>
+  <h2>3. Daten auf deinem iPhone</h2>
+  <p>Diese Daten verarbeitet die App lokal auf deinem Gerät:</p>
+  <ul>
+    <li>Fahrten, Streckenpunkte, Halte, Geschwindigkeit und Distanz</li>
+    <li>gespeicherte und automatisch erkannte Orte</li>
+    <li>gelernte Fahrzeiten („Persönliches Routing“)</li>
+    <li>Fahrtenbuch, Tankungen, Arbeitszeiten und OBD-Daten einschließlich Fehlercodes</li>
+    <li>Einstellungen und selbst eingetragene API-Schlüssel</li>
+  </ul>
+  <p>Du kannst diese Daten in der App löschen oder durch das Entfernen der App beseitigen. Sie verlassen dein Gerät zudem nur, wenn du einen Export oder eine iCloud-Sicherung selbst startest. Eine iCloud-Sicherung liegt in deinem iCloud Drive bei Apple. Zusammenfassungen mit Apple Intelligence entstehen auf dem Gerät.</p>
 
-  <h2>4. Speicherung & Weitergabe</h2>
-  <p>Keine Weitergabe an Dritte. Keine Serverkommunikation. Keine Werbung. Keine Analyse-Tools.</p>
+  <h2>4. Berechtigungen</h2>
+  <p>Die App fragt diese Berechtigungen nur für die genannten Zwecke an. Du kannst sie jederzeit in den iOS-Einstellungen entziehen.</p>
+  <div class="scroll"><table>
+    <tr><th>Berechtigung</th><th>Zweck</th></tr>
+    <tr><td>Standort (auch im Hintergrund)</td><td>Fahrten aufzeichnen, navigieren, Warnungen und Orte in der Nähe anzeigen</td></tr>
+    <tr><td>Bewegung &amp; Fitness</td><td>Bewegung erkennen, Genauigkeit verbessern, Energie sparen</td></tr>
+    <tr><td>Bluetooth</td><td>Verbindung zu einem OBD-Adapter</td></tr>
+    <tr><td>Face ID</td><td>Bestätigung, bevor Änderungen ins Steuergerät geschrieben werden</td></tr>
+    <tr><td>Kamera</td><td>Tankbelege fotografieren und auf dem Gerät auslesen</td></tr>
+    <tr><td>Mikrofon und Spracherkennung</td><td>Navigationsziel per Sprache eingeben. Die Erkennung läuft standardmäßig auf dem Gerät. Schaltest du das ab oder unterstützt dein Gerät es nicht, verarbeitet Apple die Ansage.</td></tr>
+    <tr><td>Kontakte</td><td>Adresse suchen, wenn du per Sprache zu einer Person navigierst</td></tr>
+    <tr><td>Kalender</td><td>Termine mit Ortsangabe für Abfahrtserinnerungen lesen</td></tr>
+    <tr><td>Apple Health</td><td>Schritte, Strecke, Aktivenergie und Trainingszeit lesen und mit Fahrten abgleichen. Die App schreibt keine Gesundheitsdaten.</td></tr>
+    <tr><td>Lokales Netzwerk</td><td>Kartendaten von einem selbst eingetragenen Server laden, optionale MCP-Schnittstelle (Abschnitt 7)</td></tr>
+  </table></div>
 
-  <h2>5. Rechte der Nutzer</h2>
-  <p>Daten können direkt in der App gelöscht oder durch Deinstallation entfernt werden. Export ist über die integrierten Funktionen möglich.</p>
+  <h2>5. Externe Dienste</h2>
+  <p>Bei jeder Anfrage erhält der jeweilige Anbieter technisch bedingt deine IP-Adresse. Weitere Daten nennt die Tabelle. Keiner dieser Dienste erhält von der App deinen aufgezeichneten Fahrtenverlauf. Nutzt du einen eigenen API-Schlüssel, kann der Anbieter die Anfragen deinem dortigen Konto zuordnen.</p>
+  <div class="scroll"><table>
+    <tr><th>Dienst</th><th>Zweck</th><th>Übermittelte Daten</th><th>Wann</th></tr>
+    <tr><td>Apple Karten (MapKit)</td><td>Karte, Routen, Suche, Fahrzeit für Termin-Erinnerungen</td><td>Koordinaten, Suchbegriffe, Start und Ziel, bei Terminen der Ortstext</td><td>bei Nutzung</td></tr>
+    <tr><td>Overpass-API (OpenStreetMap): overpass-api.de und die Spiegelserver kumi.systems und private.coffee</td><td>Gefahrenstellen, Orte in der Nähe</td><td>Kartenausschnitt</td><td>wenn die Quelle aktiv ist</td></tr>
+    <tr><td>Autobahn GmbH des Bundes</td><td>Verkehrsmeldungen</td><td>Kennung der Autobahn</td><td>wenn die Quelle aktiv ist</td></tr>
+    <tr><td>Mobilithek</td><td>Baustellen, Ereignisse (DATEX II)</td><td>keine Standortdaten; die App ruft nur die eingetragene Adresse ab</td><td>wenn eine Adresse eingetragen ist</td></tr>
+    <tr><td>Unfallatlas über ArcGIS (Esri)</td><td>Unfallhäufungen</td><td>Kartenausschnitt</td><td>wenn die Quelle aktiv ist</td></tr>
+    <tr><td>Deutscher Wetterdienst</td><td>Wetterwarnungen auf der Route</td><td>Kartenausschnitt</td><td>wenn die Quelle aktiv ist</td></tr>
+    <tr><td>HERE Traffic</td><td>Live-Verkehr</td><td>Kartenausschnitt, dein API-Schlüssel</td><td>nur mit eigenem Schlüssel</td></tr>
+    <tr><td>Tankerkönig</td><td>Spritpreise, Tankstellen</td><td>Koordinaten, Umkreis, dein API-Schlüssel</td><td>nur mit eigenem Schlüssel</td></tr>
+    <tr><td>Open Charge Map</td><td>Ladesäulen, auch im Ausland</td><td>Kartenausschnitt, dein API-Schlüssel</td><td>nur mit eigenem Schlüssel</td></tr>
+    <tr><td>Hugging Face</td><td>Download von Offline-Kartendaten und Ladesäulendaten</td><td>keine Standortdaten, gewählte Region</td><td>beim Download, sofern keine andere Adresse eingetragen ist</td></tr>
+    <tr><td>Google</td><td>Websuche zu einem Fehlercode</td><td>Fehlercode, Fahrzeugbezeichnung</td><td>nur wenn du die Suche antippst; sie öffnet sich im Browser</td></tr>
+    <tr><td>SumUp</td><td>Spende außerhalb des App Stores</td><td>was du auf der Zahlungsseite eingibst</td><td>nur wenn du den Spendenlink öffnest</td></tr>
+    <tr><td>Apple</td><td>App-Kauf, Trinkgeld per In-App-Kauf, iCloud-Sicherung</td><td>Abwicklung über dein Apple-Konto; ich erhalte keine Zahlungsdaten</td><td>bei Nutzung</td></tr>
+  </table></div>
+  <p>Für diese Anbieter gelten deren Datenschutzbestimmungen. Warnquellen schaltest du in den Einstellungen unter <em>Warnungen</em> ab. Dienste mit eigenem Schlüssel nutzt die App nicht, solange du keinen einträgst.</p>
 
-  <h2>6. Kontakt</h2>
-  <p>Ulrich Heine<br>E-Mail: uheine@uheine.com </p>
+  <h2>6. Feedback und Debug-Protokoll</h2>
+  <p>Schreibst du mir über die App oder per E-Mail, erhalte ich deine E-Mail-Adresse und deine Nachricht. Die Feedback-Mail enthält zusätzlich iOS-Version und Gerätemodell. Ein Debug-Protokoll erhalte ich nur, wenn du es selbst versendest. Es kann Koordinaten und Ortsnamen enthalten. Ich bewahre Feedback-Mails und Debug-Protokolle auf, bis der gemeldete Fehler behoben ist, und lösche sie danach, sofern keine gesetzliche Aufbewahrungspflicht besteht.</p>
+
+  <h2>7. MCP-Schnittstelle (Beta)</h2>
+  <p>Diese optionale Schnittstelle aktivierst du selbst in den Einstellungen. Danach ist sie im lokalen Netzwerk erreichbar und beantwortet Anfragen nur mit dem Zugriffstoken aus deinem Schlüsselbund. Wer das Token kennt, kann über sie auf App-Daten zugreifen. Gib es daher nicht weiter.</p>
+
+  <h2>8. Diese Website</h2>
+  <p>Diese Seiten liegen bei GitHub Pages (GitHub, Inc., USA). Beim Aufruf verarbeitet GitHub technisch bedingt Zugriffsdaten wie die IP-Adresse. Ich setze auf diesen Seiten keine Cookies und kein Tracking ein und lade keine externen Schriften. Das Promo-Video liegt auf demselben Server. Links zum App Store und zum GitHub-Wiki führen zu den jeweiligen Anbietern. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO, mein Interesse an einer sicheren und erreichbaren Website.</p>
+
+  <h2>9. Rechtsgrundlagen</h2>
+  <ul>
+    <li>Art. 6 Abs. 1 lit. b DSGVO: Bereitstellung der von dir genutzten App-Funktionen</li>
+    <li>Art. 6 Abs. 1 lit. a DSGVO: Einwilligung, etwa bei optionalen Funktionen und erteilten Berechtigungen; Widerruf jederzeit für die Zukunft möglich</li>
+    <li>Art. 9 Abs. 2 lit. a DSGVO: ausdrückliche Einwilligung, soweit du Daten aus Apple Health freigibst</li>
+    <li>Art. 6 Abs. 1 lit. f DSGVO: Bearbeitung von Anfragen und Betrieb der Website</li>
+  </ul>
+
+  <h2>10. Übermittlung in Drittländer</h2>
+  <p>Apple stützt Übermittlungen aus dem EWR auf Standardvertragsklauseln. GitHub und Esri nennen das EU-U.S. Data Privacy Framework und Standardvertragsklauseln, Google das EU-U.S. Data Privacy Framework. SumUp speichert Daten aus dem Europageschäft grundsätzlich im EWR und stützt Übermittlungen in Drittländer auf vertragliche Vereinbarungen. Hugging Face nennt in seiner Datenschutzerklärung keine dieser Grundlagen und stützt Übermittlungen auf die Einwilligung der Nutzer. Beim Download von dort wird kein Standort übertragen; du kannst stattdessen eine andere Download-Adresse eintragen.</p>
+
+  <h2>11. Deine Rechte</h2>
+  <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch (Art. 15 bis 21 DSGVO). Wende dich dazu an die oben genannte Adresse. Daten auf deinem iPhone verwaltest du direkt in der App.</p>
+  <p>Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren, zum Beispiel bei dem für meinen Sitz in Hessen zuständigen Hessischen Beauftragten für Datenschutz und Informationsfreiheit, Postfach 31 63, 65021 Wiesbaden, poststelle@datenschutz.hessen.de.</p>
+
+  <h2>12. Änderungen</h2>
+  <p>Ich passe diese Erklärung an, wenn sich Funktionen oder Dienste ändern. Es gilt die jeweils hier veröffentlichte Fassung.</p>
 </body>
 </html>
