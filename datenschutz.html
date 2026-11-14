@@ -16,7 +16,7 @@
 <body>
 
   <h1>Datenschutzerklärung – JourneyPulse</h1>
-  <p><strong>Stand:</strong> Oktober 2026</p>
+  <p><strong>Stand:</strong> November 2026</p>
 
   <h2>1. Verantwortlicher</h2>
   <p>Hans Ulrich Heine<br>Niester Straße 2, 37213 Witzenhausen<br>E-Mail: uheine@uheine.com</p>
@@ -35,9 +35,13 @@
     <li>gespeicherte und automatisch erkannte Orte</li>
     <li>gelernte Fahrzeiten („Persönliches Routing“)</li>
     <li>Fahrtenbuch, Tankungen, Arbeitszeiten und OBD-Daten einschließlich Fehlercodes</li>
+    <li>Fahrzeugakte: Fahrzeugdaten wie Kennzeichen, FIN und Versicherung, abgelegte Dokumente (etwa Rechnungen und Prüfberichte) mit dem darin erkannten Text, Ausgaben, Wartung, Reifen, Mängel und Rückrufe</li>
+    <li>der gemerkte Parkplatz mit Notiz und Foto</li>
+    <li>Unfallberichte mit Fotos und den Angaben, die du zu Unfallgegnern und Zeugen einträgst</li>
     <li>Einstellungen und selbst eingetragene API-Schlüssel</li>
   </ul>
-  <p>Du kannst diese Daten in der App löschen oder durch das Entfernen der App beseitigen. Sie verlassen dein Gerät zudem nur, wenn du einen Export oder eine iCloud-Sicherung selbst startest. Eine iCloud-Sicherung liegt in deinem iCloud Drive bei Apple. Zusammenfassungen mit Apple Intelligence entstehen auf dem Gerät.</p>
+  <p>Du kannst diese Daten in der App löschen oder durch das Entfernen der App beseitigen. Sie verlassen dein Gerät zudem nur, wenn du einen Export oder eine iCloud-Sicherung selbst startest. Eine iCloud-Sicherung liegt in deinem iCloud Drive bei Apple. Texterkennung in Dokumenten sowie Zusammenfassungen und das Auslesen von Dokumenten mit Apple Intelligence laufen auf dem Gerät.</p>
+  <p>„Ankunftszeit teilen“ öffnet eine vorbereitete Nachricht an einen Kontakt, den du selbst auswählst. Die App erhält dabei nur diesen einen Kontakt, keinen Zugriff auf dein Adressbuch. Versendet wird die Nachricht über Apple Nachrichten, und erst, wenn du sie bestätigst. Ein Unfallbericht verlässt das Gerät nur, wenn du ihn selbst als PDF teilst.</p>
 
   <h2>4. Berechtigungen</h2>
   <p>Die App fragt diese Berechtigungen nur für die genannten Zwecke an. Du kannst sie jederzeit in den iOS-Einstellungen entziehen.</p>
@@ -47,7 +51,7 @@
     <tr><td>Bewegung &amp; Fitness</td><td>Bewegung erkennen, Genauigkeit verbessern, Energie sparen</td></tr>
     <tr><td>Bluetooth</td><td>Verbindung zu einem OBD-Adapter</td></tr>
     <tr><td>Face ID</td><td>Bestätigung, bevor Änderungen ins Steuergerät geschrieben werden</td></tr>
-    <tr><td>Kamera</td><td>Tankbelege fotografieren und auf dem Gerät auslesen</td></tr>
+    <tr><td>Kamera</td><td>Tankbelege und Dokumente der Fahrzeugakte fotografieren und auf dem Gerät auslesen, Fotos vom Parkplatz und für einen Unfallbericht aufnehmen</td></tr>
     <tr><td>Mikrofon und Spracherkennung</td><td>Navigationsziel per Sprache eingeben. Die Erkennung läuft standardmäßig auf dem Gerät. Schaltest du das ab oder unterstützt dein Gerät es nicht, verarbeitet Apple die Ansage.</td></tr>
     <tr><td>Kontakte</td><td>Adresse suchen, wenn du per Sprache zu einer Person navigierst</td></tr>
     <tr><td>Kalender</td><td>Termine mit Ortsangabe für Abfahrtserinnerungen lesen</td></tr>
@@ -59,20 +63,23 @@
   <div class="scroll"><table>
     <tr><th>Dienst</th><th>Zweck</th><th>Übermittelte Daten</th><th>Wann</th></tr>
     <tr><td>Apple Karten (MapKit)</td><td>Karte, Routen, Suche, Fahrzeit für Termin-Erinnerungen</td><td>Koordinaten, Suchbegriffe, Start und Ziel, bei Terminen der Ortstext</td><td>bei Nutzung</td></tr>
-    <tr><td>Overpass-API (OpenStreetMap): overpass-api.de und die Spiegelserver kumi.systems und private.coffee</td><td>Gefahrenstellen, Orte in der Nähe</td><td>Kartenausschnitt</td><td>wenn die Quelle aktiv ist</td></tr>
+    <tr><td>Overpass-API (OpenStreetMap): overpass-api.de und die Spiegelserver kumi.systems und private.coffee</td><td>Gefahrenstellen, Orte in der Nähe, Parkhäuser am Ziel</td><td>Kartenausschnitt</td><td>wenn die Quelle aktiv ist</td></tr>
     <tr><td>Autobahn GmbH des Bundes</td><td>Verkehrsmeldungen</td><td>Kennung der Autobahn</td><td>wenn die Quelle aktiv ist</td></tr>
     <tr><td>Mobilithek</td><td>Baustellen, Ereignisse (DATEX II)</td><td>keine Standortdaten; die App ruft nur die eingetragene Adresse ab</td><td>wenn eine Adresse eingetragen ist</td></tr>
     <tr><td>Unfallatlas über ArcGIS (Esri)</td><td>Unfallhäufungen</td><td>Kartenausschnitt</td><td>wenn die Quelle aktiv ist</td></tr>
     <tr><td>Deutscher Wetterdienst</td><td>Wetterwarnungen auf der Route</td><td>Kartenausschnitt</td><td>wenn die Quelle aktiv ist</td></tr>
+    <tr><td>Open-Meteo</td><td>Wettervorhersage für den Frosthinweis vor der Abfahrt</td><td>Koordinate, auf etwa 1 km gerundet</td><td>wenn der Frosthinweis eingeschaltet ist</td></tr>
+    <tr><td>ParkAPI (api.parkendd.de, Projekt ParkenDD)</td><td>freie Plätze in Parkhäusern am Ziel</td><td>keine Standortdaten; abgerufen werden die Städteliste und die Parkhäuser der Stadt am Ziel</td><td>nur wenn du am Ziel nach Parkhäusern suchst</td></tr>
     <tr><td>HERE Traffic</td><td>Live-Verkehr</td><td>Kartenausschnitt, dein API-Schlüssel</td><td>nur mit eigenem Schlüssel</td></tr>
     <tr><td>Tankerkönig</td><td>Spritpreise, Tankstellen</td><td>Koordinaten, Umkreis, dein API-Schlüssel</td><td>nur mit eigenem Schlüssel</td></tr>
     <tr><td>Open Charge Map</td><td>Ladesäulen, auch im Ausland</td><td>Kartenausschnitt, dein API-Schlüssel</td><td>nur mit eigenem Schlüssel</td></tr>
     <tr><td>Hugging Face</td><td>Download von Offline-Kartendaten und Ladesäulendaten</td><td>keine Standortdaten, gewählte Region</td><td>beim Download, sofern keine andere Adresse eingetragen ist</td></tr>
     <tr><td>Google</td><td>Websuche zu einem Fehlercode</td><td>Fehlercode, Fahrzeugbezeichnung</td><td>nur wenn du die Suche antippst; sie öffnet sich im Browser</td></tr>
+    <tr><td>Kraftfahrt-Bundesamt (Rückrufdatenbank)</td><td>Rückrufe für dein Fahrzeug prüfen</td><td>die App überträgt nichts; die Datenbank öffnet sich im Browser, und die FIN liegt nur in deiner Zwischenablage, bis du sie dort selbst einfügst</td><td>nur wenn du die Rückrufsuche öffnest</td></tr>
     <tr><td>SumUp</td><td>Spende außerhalb des App Stores</td><td>was du auf der Zahlungsseite eingibst</td><td>nur wenn du auf dieser Website oder im Wiki einen Spendenlink öffnest; die App ruft SumUp nicht auf</td></tr>
     <tr><td>Apple</td><td>App-Kauf, freiwillige Spende per In-App-Kauf, iCloud-Sicherung</td><td>Abwicklung über dein Apple-Konto; ich erhalte keine Zahlungsdaten</td><td>bei Nutzung</td></tr>
   </table></div>
-  <p>Für diese Anbieter gelten deren Datenschutzbestimmungen. Warnquellen schaltest du in den Einstellungen unter <em>Warnungen</em> ab. Dienste mit eigenem Schlüssel nutzt die App nicht, solange du keinen einträgst.</p>
+  <p>Für diese Anbieter gelten deren Datenschutzbestimmungen. Warnquellen schaltest du in den Einstellungen unter <em>Warnungen</em> ab, den Frosthinweis unter <em>Navigation</em>. Dienste mit eigenem Schlüssel nutzt die App nicht, solange du keinen einträgst.</p>
 
   <h2>6. Feedback und Debug-Protokoll</h2>
   <p>Schreibst du mir über die App oder per E-Mail, erhalte ich deine E-Mail-Adresse und deine Nachricht. Die Feedback-Mail enthält zusätzlich iOS-Version und Gerätemodell. Ein Debug-Protokoll erhalte ich nur, wenn du es selbst versendest. Es kann Koordinaten und Ortsnamen enthalten. Ich bewahre Feedback-Mails und Debug-Protokolle auf, bis der gemeldete Fehler behoben ist, und lösche sie danach, sofern keine gesetzliche Aufbewahrungspflicht besteht.</p>
